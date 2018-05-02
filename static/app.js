@@ -464,7 +464,7 @@ const safeCircle = new ol.Feature({
   geometry: new ol.geom.Circle([-1, -1], 100)
 })
 safeCircle.setId('safe')
-safeCircle.set('_color', 'rgba(0,0,255,0.9)')
+safeCircle.set('_color', 'rgb(0,0,255,0.9)')
 safeCircle.setStyle(zoneStyleFunc)
 gridSource.addFeature(safeCircle)
 
@@ -472,7 +472,7 @@ const poisonCircle = new ol.Feature({
   geometry: new ol.geom.Circle([-1, -1], 0)
 })
 poisonCircle.setId('poison')
-poisonCircle.set('_color', 'rgba(255,255,255,0.9)')
+poisonCircle.set('_color', 'rgb(255,255,255,0.9)')
 poisonCircle.setStyle(zoneStyleFunc)
 gridSource.addFeature(poisonCircle)
 
@@ -492,17 +492,17 @@ const itemStyleFunc = function (feature) {
     image: new ol.style.Circle({
       radius: 3,
       fill: new ol.style.Fill({
-        color: 'rgba(0,255,0,1)'
+        color: 'rgb(0,255,0,1)'
       }),
-      stroke: new ol.style.Stroke({color: 'rgba(0,0,255,0.8)', width: 1.5 })
+      stroke: new ol.style.Stroke({color: 'rgb(0,0,255,0.8)', width: 1.5 })
     }),
     text: new ol.style.Text({
       font: 'bold 14px Calibri,sans-serif',
       textAlign: 'center',
-      fill: new ol.style.Fill({ color: 'rgba(239,108,0,1)' }),
+      fill: new ol.style.Fill({ color: 'rgb(239,108,0,1)' }),
       text: this.get('_label') || '' ,
       offsetY: 12,
-      stroke: new ol.style.Stroke({color: 'rgba(255,255,255,1)', width: 2.5 })
+      stroke: new ol.style.Stroke({color: 'rgb(255,255,255,1)', width: 2.5 })
     })
   })
   return [style]
@@ -528,11 +528,11 @@ const meStyleFunc = function (feature) {
     image: new ol.style.Circle({
       radius: this.get('_radius'),
       fill: new ol.style.Fill({
-        color: 'rgba(255,255,255,1)'
+        color: 'rgb(255,255,255,1)'
       }),
       stroke : new ol.style.Stroke({
         width : this.get('_radius') - 1,
-        color : 'rgba(64,255,64,1)'
+        color : 'rgb(64,255,64,1)'
       })
     }),
   })
@@ -541,7 +541,7 @@ const meStyleFunc = function (feature) {
   if (lineGeo)
   result.push(new ol.style.Style({
     geometry: this.get('_lineGeo'),
-    stroke: new ol.style.Stroke({ color: 'rgba(64,255,64,1)', width: 2.2 })
+    stroke: new ol.style.Stroke({ color: 'rgb(64,255,64,1)', width: 2.2 })
   }))
   return result
 }
