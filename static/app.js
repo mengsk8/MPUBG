@@ -355,7 +355,7 @@ const apawnStyleFunc = function (feature) {
     text: new ol.style.Text({
       font: '12px Calibri,sans-serif',
       textAlign: 'center',
-      fill: new ol.style.Fill({ color: 'rgba(255,255,255,0.9)' }),
+      fill: new ol.style.Fill({ color: 'rgb(255,255,255,0.9)' }),
       text: this.get('_label') || '' ,
       offsetY: 15
     })
@@ -384,7 +384,7 @@ const playerStyleFunc = function (feature) {
     text: new ol.style.Text({
       font: '12px Calibri,sans-serif',
       textAlign: 'center',
-      fill: new ol.style.Fill({ color: 'rgba(255,255,255,1)' }),
+      fill: new ol.style.Fill({ color: 'rgb(255,255,255,1)' }),
       text: this.get('_label') || '' ,
       offsetY: 15
     })
