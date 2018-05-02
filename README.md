@@ -4,4 +4,5 @@
 3：关机后一键启动功能
 4：去除人物杂码
 5：优化部分可修复偏移
-一键代码 yum install git; git clone https://github.com/mengsk8/Myradar.git ; chmod + x ./root/Myradar/update.sh; ./root/Myradar/update.sh
+6：一键代码
+7：yum install git;git clone https://github.com/mengsk8/Myradar.git;chmod +x . /root/Myradar/update.sh;. /root/Myradar/update.sh
